@@ -1,0 +1,73 @@
+body {font-family: Arial;margin:0}
+.is-text-left {	text-align: left}
+.is-text-center {text-align: center;}
+.is-text-right {text-align: right;}
+.is-video-right { float:right;margin-left: 20px;width: 43%;height: auto;margin-top: 20px;}
+header {position:relative;color: #ffffff;font-size: 25px;padding: 5px;overflow:hidden;text-align: center;min-height: 330px;display: grid;align-items: center;}
+h2 {font-family: Arial;font-weight:bold;}
+h3 {font-family: Arial;font-weight:100; margin:0 0 10px 0;}
+article {font-family: Arial;background-color: #ffffff;display:table; margin:auto; padding: 20px; width:auto; }
+section:after {clear: both;content: "";display: table;}
+.title {border-bottom: solid 1px #2699FB;font-size: 30px;padding-bottom: 10px;text-align: center;text-transform: uppercase;}
+.fieldClass { margin:auto; width:70%;}
+.fieldClass input {border: solid 1px;border-radius: 20px;display: block;padding: 9px;margin: auto;}
+.fieldClass label {display: block;font-size: 18px;margin-top:10px;margin-bottom: 10px;text-align: center;text-transform: uppercase;}
+.fieldClass2 {margin:auto;width:70%;}
+.fieldClass2 input,.fieldClass2 textarea { border:solid 2px black; padding:5px;}
+.fieldClass2 label { display:block; margin-top:15px;}
+.fieldClass2 button {background: green;color: #ffffff;font-size: 14px;padding: 10px 30px;}
+.formInput { width:100%;}	
+fieldClass2 fieldset {margin: auto;margin-bottom: 20px;width: 70%;}	
+iframe { margin-bottom:15px;margin-left:15px; }
+.me {background: #B22222;color: #ffffff;font-size: 20px;margin-right:10px;padding: 10px 20px;text-decoration: none;}
+.me-google {background: #B22222;color: #ffffff;}
+.me-facebook {background: #151B8D;color: #ffffff;}
+.me-instagram {background: #C71585;color: #ffffff;}
+.me:hover {opacity:0.6;}
+/* Navigation */
+ul.topnav {background-color: #333;list-style-type: none;margin: 0;overflow: hidden;padding: 0;}
+ul.topnav li {float: left;}
+ul.topnav li a {color: #ffffff;display: block;padding: 14px 16px;text-align: center;text-decoration: none;}
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+ul.topnav li .active {background-color: #4CAF50;}
+ul.topnav li.right {float: right;}
+.main-img1 { max-height:150px;}
+.main-img2 { margin-left:10px; max-height:150px; }
+
+/* Table */
+table {border-collapse: collapse;font-family: Arial; width:100%;margin: 0;padding: 0;width: 100%;}
+table, th, td { border: 1px solid black;border-collapse: collapse;}
+th, td {padding: 15px; text-align: left;}
+table th {background-color: #2699FB;color: #FFFFFF;}
+table thead th { background-color: #2699FB; color: #FFFFFF;}
+table tr {background: #f8f8f8;border: 1px solid #ddd;padding: .35em;}
+table tbody tr td:first-child {background-color: #2699FB;color: #FFFFFF;} 
+table th, table td {padding: .625em;text-align: center;}
+table th {font-size: .85em;letter-spacing: .1em;text-transform: uppercase;}
+/* Cookies */
+.cookies { position: fixed;background: #ffffff;bottom: 0;left: 0;z-index: 99999;width: 200px;text-align: center;padding: 10px 40px;margin: 0;border: solid 2px #2699fb;font-size: 14pt;   font-weight: bold;}
+.cookies span { display:block; font-size:11pt; font-weight:normal; margin-top:10px;}	
+.top-cover{position: absolute;margin:auto;top: 0;left: 0;right: 0;bottom: 0;width:100%;z-index: -1;}
+footer {background-color: #777;color: #ffffff;padding: 10px;text-align: center;}
+/* Mobile view */
+@media (max-width: 768px) {
+	header {min-height: 190px;}
+	.is-video-right { float:none;margin-left: 0;width: 100%;}
+	.cookies {right: 0;width: auto;}
+	article { min-width:auto;}
+	iframe { width:100%;}
+	table { border: 0; }
+	table thead { display: none; }
+	table tr {border-bottom: 3px solid #ddd;display: block;margin-bottom: .625em;}
+	table td {border-bottom: 1px solid #ddd;display: block;font-size: .8em;text-align: right;}
+	table td:before {content: attr(data-label);float: left;font-weight: bold;text-transform: uppercase;}
+	table td:last-child { border-bottom: 0; }
+	.main-img1 { width:100%;max-height: none;}
+  	.main-img2 { margin-left:0;width:100%;max-height: none; }
+ 	 ul.topnav li.right,ul.topnav li {float: none;}
+}
+@media (max-width: 375px) {
+	header {    min-height: 150px;}
+	h1 {font-size: 20pt;}
+	h3 { font-size:12pt;}
+}
